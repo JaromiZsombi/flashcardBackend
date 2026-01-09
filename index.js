@@ -7,7 +7,7 @@ dotenv.config()
 
 const app = express()
 app.use(cors({
-    origin:process.env.VITE_API_URL,//frontend címe
+    origin:process.env.FRONTEND_URL,//frontend címe
     credentials:true//engedélyezzük a sütik közlését
 }))
 app.use(express.json())
